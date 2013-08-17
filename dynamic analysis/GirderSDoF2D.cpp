@@ -10,13 +10,13 @@
 ///<param name="Section">Section of the Girder.</param>
 ///<remarks>description</remarks>
 GirderSDoF2D::GirderSDoF2D(int ID, 
-						   double Length,
-						   double CGx,
-						   double CGz, 
-						   int MeshIncrement, 
-						   double Gravity,
-						   char* Path, 
-						   Section2D Section)
+			   double Length,
+			   double CGx,
+			   double CGz, 
+			   int MeshIncrement, 
+			   double Gravity,
+			   char* Path, 
+			   Section2D Section)
 {
 	//Determine if the Geoemtry is set. 
 	IsGeometrySet = false;
@@ -45,14 +45,14 @@ GirderSDoF2D::GirderSDoF2D(int ID,
 	this -> SetIncrementBlastLoad();
 };
 
-GirderSDoF2D::GirderSDoF2D(int ID, 
-						   double Length, 
-						   double CGx,
-						   double CGz, 
-						   int MeshIncrement, 
-						   double Gravity,
-						   char *Path, 
-						   GirderSection2D &Section)
+GirderSDoF2D::GirderSDoF2D(int ID,
+			   double Length, 
+			   double CGx,
+			   double CGz, 
+			   int MeshIncrement, 
+			   double Gravity,
+			   char *Path, 
+			   GirderSection2D &Section)
 {
 	//Determine if the Geoemtry is set. 
 	IsGeometrySet = false;
@@ -100,13 +100,13 @@ GirderSDoF2D::GirderSDoF2D(int ID,
 };
 
 GirderSDoF2D::GirderSDoF2D(int ID, 
-					 double Length, 
-					 double CGx,
-					 double CGz, 
-					 int MeshIncrement, 
-					 double Gravity,
-					 char* Path, 
-					 GirderSection2D *Section)
+			   double Length,
+			   double CGx,
+			   double CGz, 
+			   int MeshIncrement,
+			   double Gravity,
+			   char* Path, 
+			   GirderSection2D *Section)
 {
 	// Call the other constructor.
 	GirderSDoF2D(ID,
